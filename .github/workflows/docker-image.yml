@@ -15,10 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build --file Dockerfile --tag veerakumarmail/docker-node-sample:latest .
-    - uses: actions/checkout@v2
-    - name: login the Docker image
-      run: docker login -u veerakumarmail --password Astro1234  
-    - uses: actions/checkout@v2
-    - name: Push the Docker image
-      run: docker push veerakumarmail/docker-node-sample:latest  
+      run: docker build --file Dockerfile --tag veerakumarmail/docker-node-sample:latest . 
